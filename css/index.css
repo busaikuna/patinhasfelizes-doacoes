@@ -1,0 +1,67 @@
+body{
+    background-color: #000;
+    background-image: url("../src/Design\ sem\ nome\ \(3\).png");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+.why{
+    width: 85vw;
+    margin: auto;
+    margin-top: 15vh;
+}
+.why h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.why p{
+    margin-top: 5vh;
+    font-size: 1rem;
+    text-align: center;
+}
+.tasks{
+    margin-top: 20vh;
+}
+.tasks span{
+    font-weight: bold;
+    font-size: 2rem;
+    border-bottom: 7px solid #fff;
+}
+.tasks ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+    font-size: 1.5rem;
+    margin-top: 10vh;
+}
+
+.pay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20vh;
+    gap: 5vh;
+}
+.pay button{
+    cursor: pointer;
+    border: #1D6BD8 2px solid;
+    border-radius: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1D6BD8;
+    background-color: #00000043;
+    backdrop-filter: blur(15px);
+    width: 45vw;
+    height: 15vh;
+    transition: all 0.5s;
+    margin-bottom: 25vh;
+}
+
+.pay button:hover{
+    width: 47vw;
+    height: 17vh;
+}
