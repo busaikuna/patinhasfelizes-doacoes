@@ -65,3 +65,29 @@ body{
     width: 47vw;
     height: 17vh;
 }
+
+
+@media (max-width: 768px) {
+    .why h1{
+        font-size: 1.2rem;
+    } 
+    .why p{
+        font-size: 0.8;
+    }
+    .tasks{
+        margin-top: 8vh;
+    }
+    .tasks span{  
+        font-size: 1.2rem;
+    }
+    .tasks ul{
+        font-size: 1rem;
+    }
+    .pay{
+        margin-top: 8vh;
+    }
+    .pay button{
+        font-size: 1.5rem;
+    }
+
+}

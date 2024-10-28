@@ -54,7 +54,6 @@ header {
 .welcome{
     display: flex;
     flex-direction: column;
-    gap: 15px;
 }
 
 
@@ -138,5 +137,53 @@ header {
     }
     100%{
         top: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 30px;
+    }
+    header{
+        width: 100vw;
+        padding-bottom: 12vh;
+        flex-direction: column-reverse;
+    }
+    .style{
+        width: 55vw;
+        left: 20%;
+    }
+    .cone{
+        width: 23vw;
+        top: 25%;
+        left: 25%;
+    }
+    .text-content{  
+        margin-top: 8vh;
+    }
+    .text-content h1{
+        font-size: 3rem;
+    }
+    .text-content h3{
+        font-size: 1rem;
+    }
+    .pets{
+        width: 45vw;
+        height: 45vw;
+    }
+    .pets:hover{
+        width: 45vw;
+        height: 45vw;
+    }
+    .social{
+        gap: 5px;
+        bottom: 10%;
+        position: absolute;
+    }
+    .social div{
+        margin-top: 1vh;
     }
 }
