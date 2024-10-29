@@ -7,15 +7,34 @@
     <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="shortcut icon" href="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzhWBYMl_l3yPRK-CBW785jnl3iLxENze97pRS1Oi2yG3O3DDA" type="image/x-icon">
+    <link rel="shortcut icon" href="src/favicon.png" type="image/x-icon">
 </head>
 <body>
+    <div class="pop-up">
+        <dialog id="dialogForm">
+          <form id="formCadastro" method="dialog">
+            <h2>Cadastro na Lista de Espera</h2>
+            <br>
+            <label for="nome">Nome:</label>
+            <input type="text" placeholder="Digite seu nome:" id="nome" name="nome" required>
+        
+            <label for="numero">Número:</label>
+            <input type="tel" id="numero" name="numero" required pattern="[0-9]{10,11}" placeholder="Digite seu número (apenas números):">
+            <button type="submit">Enviar</button>
+          </form>
+        </dialog>
+
+        <dialog id="dialogConfirmacao">
+            <p>Obrigado por se cadastrar na nossa lista de espera! Assim que tivermos animais disponíveis para adoção, entraremos em contato com você pelo número fornecido. Enquanto isso, continue acompanhando nossas atualizações. Aguardamos ansiosamente para ajudá-lo a encontrar um novo amigo!</p>
+            <img class="check" src="https://cdn-icons-png.flaticon.com/512/190/190411.png">
+          </dialog>
+    </div>
     <header>
         <div class="blur"></div>
         <div class="text-content">
             <div class="welcome">
                 <div class="logo">
-                    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzhWBYMl_l3yPRK-CBW785jnl3iLxENze97pRS1Oi2yG3O3DDA"><span>Infinite Dev</span>
+                    <img src="src/logo-transparent.png">
                 </div>
                 <h1>Patinhas <br>
                 Felizes</h1>
@@ -23,6 +42,7 @@
             </div>
             <div class="social">
                 <button>FALE CONOSCO</button>
+                <button onclick="document.getElementById('dialogForm').showModal()">ADOTAR ANIMAL</button>
                 <div>
                     <p>SIGA-NOS:</p>
                     <img src="https://static.vecteezy.com/system/resources/previews/018/930/413/non_2x/instagram-logo-instagram-icon-transparent-free-png.png">
@@ -56,5 +76,6 @@
             </div>
         </section>
     </main>
+    <script src="javascript/style.js"></script>
 </body>
 </html>

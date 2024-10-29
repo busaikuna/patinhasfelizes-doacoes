@@ -1,6 +1,6 @@
 body{
     background-color: #000;
-    background-image: url("../src/Design\ sem\ nome\ \(3\).png");
+    background-image: url("../src/bg-patinhas2.png");
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -91,3 +91,74 @@ body{
     }
 
 }
+
+dialog {
+    color: #fff;
+    background-image: url("../src/bg-patinhas2.png");
+    background-size: cover;
+    margin: auto;
+    padding: 20px;
+    width: 90%;
+    height: 70%;
+    max-width: 400px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  dialog::backdrop {
+    background: rgba(0, 0, 0, 0.571);
+    backdrop-filter: blur(5px);
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 10px;
+  }
+  label {
+    font-size: 1rem;
+  }
+  input[type="text"], input[type="tel"] {
+    color: #000;
+    outline: none;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  button[type="submit"]{
+    cursor: pointer;
+    margin-top: 5vh;
+    border: #fff 1px solid;
+    border-radius: 10px;
+    height: 5vh;
+    background-color: #000;
+  }
+  .pop-up{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #dialogConfirmacao {
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    width: 85vw;
+    height: 35vh;
+    margin: auto;
+    background-image: url("../src/bg-patinhas2.png");
+    background-size: cover;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+  .check{
+    margin: auto;
+    width: 60px;
+  }

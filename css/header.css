@@ -45,11 +45,13 @@ header {
     display: flex;
     align-items: center;
     font-weight: bold;
-    margin-bottom: 7vh;
+    margin-bottom: 5vh;
     gap: 5px;
 }
 .logo img{
-    width: 45px;
+    object-fit: cover;
+    width: 80px;
+    height: 70px;
 }
 .welcome{
     display: flex;
@@ -58,6 +60,7 @@ header {
 
 
 .social button{
+    width: 35vw;
     font-size: 1rem;
     cursor: pointer;
     font-weight: bold;
@@ -66,6 +69,7 @@ header {
     outline: none;
     padding: 10px 20px;
     transition: all 1s ;
+    margin-bottom: 1vh;
 }
 .social button:hover{
     background-color: #002a36;
@@ -103,6 +107,7 @@ header {
     width: 10vw;
     left: 59%;
     top: 50%;
+    margin-top: 5vh;
     object-fit: cover;
 }
 .pets{
@@ -185,5 +190,8 @@ header {
     }
     .social div{
         margin-top: 1vh;
+    }
+    .social button{
+        width: 50vw;
     }
 }
