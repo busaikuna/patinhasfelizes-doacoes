@@ -21,5 +21,5 @@ formCadastro.addEventListener('submit', (event) => {
 
   setTimeout(() => {
     dialogConfirmacao.close();
-  }, 5000);
+  }, 8000);
 });
