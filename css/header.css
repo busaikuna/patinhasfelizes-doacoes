@@ -37,17 +37,17 @@ header {
     flex-direction: column;
     gap: 20vh;
     width: 45vw;
-    max-width: 600px; /* Limitar a largura máxima para telas maiores */
+    max-width: 600px;
 }
 
 .text-content h1 {
     font-size: 5rem;
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
 }
 
 .text-content h3 {
     font-size: 2.5rem;
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
 }
 
 .logo {
@@ -183,13 +183,13 @@ header {
     }
     .text-content {
         margin-top: 8vh;
-        width: 80vw; /* Ajuste a largura para telas menores */
+        width: 80vw;
     }
     .text-content h1 {
         font-size: 3rem;
     }
     .text-content h3 {
-        font-size: 1.5rem; /* Aumentando um pouco a fonte para melhor legibilidade */
+        font-size: 1.5rem;
     }
     .pets {
         width: 45vw;
@@ -212,23 +212,22 @@ header {
     }
 }
 
-/* Estilos para dispositivos menores, como smartphones */
 @media (max-width: 480px) {
     .text-content {
-        width: 90vw; /* Aumenta a largura para smartphones */
+        width: 90vw;
     }
     .text-content h1 {
-        font-size: 2.5rem; /* Diminui ainda mais o tamanho da fonte */
+        font-size: 2.5rem;
     }
     .text-content h3 {
-        font-size: 1.2rem; /* Diminui o tamanho da fonte */
+        font-size: 1.2rem;
     }
     .pets {
-        width: 60vw; /* Ajusta a largura para smartphones */
-        height: 60vw; /* Mantém a proporção */
+        width: 60vw;
+        height: 60vw;
     }
     .cone {
-        width: 30vw; /* Ajusta para melhor visualização em smartphones */
-        left: 20%; /* Alinha ao centro */
+        width: 30vw;
+        left: 20%;
     }
 }
