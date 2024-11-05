@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #000;
     background-image: url("../src/bg-patinhas2.png");
     background-size: cover;
@@ -6,30 +6,35 @@ body{
     background-attachment: fixed;
     overflow-x: hidden;
 }
-.why{
+
+.why {
     width: 85vw;
     margin: auto;
     margin-top: 15vh;
 }
-.why h1{
+
+.why h1 {
     font-size: 2.5rem;
     text-align: center;
 }
 
-.why p{
+.why p {
     margin-top: 5vh;
     font-size: 1rem;
     text-align: center;
 }
-.tasks{
+
+.tasks {
     margin-top: 20vh;
 }
-.tasks span{
+
+.tasks span {
     font-weight: bold;
     font-size: 2rem;
     border-bottom: 7px solid #fff;
 }
-.tasks ul{
+
+.tasks ul {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -38,7 +43,7 @@ body{
     margin-top: 10vh;
 }
 
-.pay{
+.pay {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +51,8 @@ body{
     margin-top: 20vh;
     gap: 5vh;
 }
-.pay button{
+
+.pay button {
     cursor: pointer;
     border: #1D6BD8 2px solid;
     border-radius: 10px;
@@ -61,104 +67,31 @@ body{
     margin-bottom: 25vh;
 }
 
-.pay button:hover{
+.pay button:hover {
     width: 47vw;
     height: 17vh;
 }
 
-
 @media (max-width: 768px) {
-    .why h1{
+    .why h1 {
         font-size: 1.2rem;
     } 
-    .why p{
+    .why p {
         font-size: 0.8;
     }
-    .tasks{
+    .tasks {
         margin-top: 8vh;
     }
-    .tasks span{  
+    .tasks span {  
         font-size: 1.2rem;
     }
-    .tasks ul{
+    .tasks ul {
         font-size: 1rem;
     }
-    .pay{
+    .pay {
         margin-top: 8vh;
     }
-    .pay button{
+    .pay button {
         font-size: 1.5rem;
     }
-
 }
-
-dialog {
-    color: #fff;
-    background-image: url("../src/bg-patinhas2.png");
-    background-size: cover;
-    margin: auto;
-    padding: 20px;
-    width: 90%;
-    height: 70%;
-    max-width: 400px;
-    border-radius: 8px;
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  dialog::backdrop {
-    background: rgba(0, 0, 0, 0.571);
-    backdrop-filter: blur(5px);
-  }
-  form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    gap: 10px;
-  }
-  label {
-    font-size: 1rem;
-  }
-  input[type="text"], input[type="tel"] {
-    color: #000;
-    outline: none;
-    padding: 8px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  button[type="submit"]{
-    cursor: pointer;
-    margin-top: 5vh;
-    border: #fff 1px solid;
-    border-radius: 10px;
-    height: 5vh;
-    background-color: #000;
-  }
-  .pop-up{
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #dialogConfirmacao {
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    width: 85vw;
-    height: 35vh;
-    margin: auto;
-    background-image: url("../src/bg-patinhas2.png");
-    background-size: cover;
-    border-radius: 8px;
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-  .check{
-    margin: auto;
-    width: 60px;
-  }

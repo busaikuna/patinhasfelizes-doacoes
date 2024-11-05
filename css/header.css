@@ -4,19 +4,21 @@
     font-weight: normal;
     font-style: normal;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: #fff;
     font-family: Teslagraf;
 }
-img, button, .logo{
+
+img, button, .logo {
     user-select: none;
 }
 
 header {
-    width: 99vw;
+    width: 100vw;
     height: 100vh;
     background-image: url("../src/bg-patinhas.png");
     background-repeat: no-repeat;
@@ -28,38 +30,46 @@ header {
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
 }
-.text-content{
+
+.text-content {
     z-index: 1;
     display: flex;
     flex-direction: column;
     gap: 20vh;
     width: 45vw;
+    max-width: 600px; /* Limitar a largura máxima para telas maiores */
 }
-.text-content h1{
+
+.text-content h1 {
     font-size: 5rem;
+    text-align: center; /* Centraliza o texto */
 }
-.text-content h3{
+
+.text-content h3 {
     font-size: 2.5rem;
+    text-align: center; /* Centraliza o texto */
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
     font-weight: bold;
     margin-bottom: 5vh;
     gap: 5px;
 }
-.logo img{
+
+.logo img {
     object-fit: cover;
     width: 80px;
     height: 70px;
 }
-.welcome{
+
+.welcome {
     display: flex;
     flex-direction: column;
 }
 
-
-.social button{
+.social button {
     width: 35vw;
     font-size: 1rem;
     cursor: pointer;
@@ -68,40 +78,43 @@ header {
     border: #E5E900 1px solid;
     outline: none;
     padding: 10px 20px;
-    transition: all 1s ;
+    transition: all 1s;
     margin-bottom: 1vh;
 }
-.social button:hover{
+
+.social button:hover {
     background-color: #002a36;
     border: #ffffff 1px solid; 
 }
-.social div{
+
+.social div {
     display: flex;
     align-items: center;
     font-weight: bold;
     margin-top: 5vh;
 }
-.social img{
+
+.social img {
     cursor: pointer;
     width: 50px;
 }
 
-
-
-.midia-content{
+.midia-content {
     width: 45vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.style{
+
+.style {
     transform: scaleY(-1);
     transform: scaleX(-1);
     width: 35vw;
     position: absolute;
     left: 53%;
 }
-.cone{
+
+.cone {
     z-index: 999;
     position: absolute;
     width: 10vw;
@@ -110,7 +123,8 @@ header {
     margin-top: 5vh;
     object-fit: cover;
 }
-.pets{
+
+.pets {
     width: 25vw;
     height: 25vw;
     object-fit: cover;
@@ -118,12 +132,13 @@ header {
     border-radius: 100%;
     transition: all 1s;
 }
-.pets:hover{
+
+.pets:hover {
     width: 25.5vw;
     height: 25.5vw;
 }
 
-.see-more{
+.see-more {
     top: 90%;
     width: 35px;
     height: 27px;
@@ -134,64 +149,86 @@ header {
 }
 
 @keyframes arrow {
-    0%{
+    0% {
         top: 90%;
     }
-    50%{
+    50% {
         top: 92%;
     }
-    100%{
+    100% {
         top: 90%;
     }
 }
 
 @media (max-width: 768px) {
-    .logo{
+    .logo {
         position: absolute;
         top: 0;
         left: 0;
         margin: 30px;
     }
-    header{
+    header {
         width: 100vw;
         padding-bottom: 12vh;
         flex-direction: column-reverse;
     }
-    .style{
+    .style {
         width: 55vw;
         left: 20%;
     }
-    .cone{
+    .cone {
         width: 23vw;
         top: 25%;
         left: 25%;
     }
-    .text-content{  
+    .text-content {
         margin-top: 8vh;
+        width: 80vw; /* Ajuste a largura para telas menores */
     }
-    .text-content h1{
+    .text-content h1 {
         font-size: 3rem;
     }
-    .text-content h3{
-        font-size: 1rem;
+    .text-content h3 {
+        font-size: 1.5rem; /* Aumentando um pouco a fonte para melhor legibilidade */
     }
-    .pets{
+    .pets {
         width: 45vw;
         height: 45vw;
     }
-    .pets:hover{
+    .pets:hover {
         width: 45vw;
         height: 45vw;
     }
-    .social{
+    .social {
         gap: 5px;
         bottom: 10%;
         position: absolute;
     }
-    .social div{
+    .social div {
         margin-top: 1vh;
     }
-    .social button{
+    .social button {
         width: 50vw;
+    }
+}
+
+/* Estilos para dispositivos menores, como smartphones */
+@media (max-width: 480px) {
+    .text-content {
+        width: 90vw; /* Aumenta a largura para smartphones */
+    }
+    .text-content h1 {
+        font-size: 2.5rem; /* Diminui ainda mais o tamanho da fonte */
+    }
+    .text-content h3 {
+        font-size: 1.2rem; /* Diminui o tamanho da fonte */
+    }
+    .pets {
+        width: 60vw; /* Ajusta a largura para smartphones */
+        height: 60vw; /* Mantém a proporção */
+    }
+    .cone {
+        width: 30vw; /* Ajusta para melhor visualização em smartphones */
+        left: 20%; /* Alinha ao centro */
     }
 }

@@ -10,30 +10,6 @@
     <link rel="shortcut icon" href="src/fav.png" type="image/x-icon">
 </head>
 <body>
-    <div class="pop-up">
-        <dialog id="dialogForm">
-          <form id="formCadastro" onsubmit="enviarCadastro(event)">
-            <h2>Cadastro na Lista de Espera</h2>
-            <label for="nome">Nome:</label>
-            <input type="text" placeholder="Digite seu nome:" id="nome" name="nome" required>
-        
-            <label for="numero">Número:</label>
-            <input type="tel" id="numero" name="numero" required pattern="[0-9]{10,11}" placeholder="Digite seu número (apenas números):">
-            <button type="submit">Enviar</button>
-          </form>
-        </dialog>
-
-        <dialog id="dialogConfirmacao">
-            <p>Obrigado por se cadastrar na nossa lista de espera! Assim que tivermos animais disponíveis para adoção, entraremos em contato com você pelo número fornecido.</p>
-            <img class="check" src="https://cdn-icons-png.flaticon.com/512/190/190411.png">
-        </dialog>
-    </div>
-
-        <dialog id="dialogConfirmacao">
-            <p>Obrigado por se cadastrar na nossa lista de espera! Assim que tivermos animais disponíveis para adoção, entraremos em contato com você pelo número fornecido. Enquanto isso, continue acompanhando nossas atualizações. Aguardamos ansiosamente para ajudá-lo a encontrar um novo amigo!</p>
-            <img class="check" src="https://cdn-icons-png.flaticon.com/512/190/190411.png">
-          </dialog>
-    </div>
     <header>
         <div class="blur"></div>
         <div class="text-content">
@@ -46,11 +22,11 @@
                 <h3>Estamos quase prontos</h3>
             </div>
             <div class="social">
-                <button>FALE CONOSCO</button>
-                <button onclick="document.getElementById('dialogForm').showModal()">ADOTAR ANIMAL</button>
+                <a href="https://wa.me/558981202147?text=Vim%20pelo%20site%20de%20doacoes%20do%20Patinhas%20Felizes%20e%20queria%20conversar%20com%20algum%20responsavel                "><button>FALE CONOSCO</button></a>
+                <button><a style="text-decoration: none;" href="https://adocao-pet-online-1.onrender.com">ADOTAR ANIMAL</a></button>
                 <div>
                     <p>SIGA-NOS:</p>
-                    <img src="https://static.vecteezy.com/system/resources/previews/018/930/413/non_2x/instagram-logo-instagram-icon-transparent-free-png.png">
+                    <a href="https://www.instagram.com/patinhasfelizes.adote/"><img src="https://static.vecteezy.com/system/resources/previews/018/930/413/non_2x/instagram-logo-instagram-icon-transparent-free-png.png"></a>
                 </div>
             </div>
         </div>
